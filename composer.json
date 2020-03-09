@@ -12,8 +12,12 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
+        "laravel-frontend-presets/tailwindcss": "^4.0",
         "laravel/framework": "^7.0",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "laravel/ui": "^2.0",
+        "spatie/laravel-google-calendar": "^2.5",
+        "spatie/opening-hours": "^2.7"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
