@@ -14,6 +14,7 @@
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none">
     <div id="app">
+        @include('layouts.partials.frontend.header')
         @yield('content')
     </div>
 
