@@ -1,13 +1,22 @@
-<section class="hidden lg:flex justify-center items-center bg-gray-200">
-    <div class="w-5/12 bg-red-300 text-right py-4">
-        <a class="mr-24" href="/">Home</a>
-        <a class="mr-24" href="/">About</a>
-        <a class="mr-0" href="/">Events</a>
+@auth
+    <div class="px-6 py-2 text-sm font-bold text-right text-white bg-purple-700">
+        <a href="{{ route('home') }}">Go to dashboard</a>
     </div>
-    <div class="w-2/12 bg-blue-300 text-center py-4">logo</div>
-    <div class="w-5/12 bg-red-300 py-4">
-        <a class="ml-0" href="/">Gallery</a>
-        <a class="ml-24" href="/">Booking</a>
-        <a class="ml-24" href="/">Contact</a>
+@endauth
+<section class="items-center justify-center hidden py-8 text-gray-200 bg-gray-900 lg:flex">
+    <div class="w-5/12 text-right">
+        <a class="mr-24" href="/">Home</a>
+        <a class="mr-24" href="/about">About</a>
+        <a class="mr-0" href="/events">Events</a>
+    </div>
+    <div class="w-2/12 text-center">
+        <h3 class="text-xl font-bold">
+            <a href="/">Logo</a>
+        </h3>
+    </div>
+    <div class="w-5/12">
+        <a class="ml-0" href="/gallery">Gallery</a>
+        <a class="ml-24" href="/booking">Booking</a>
+        <a class="ml-24" href="/contact">Contact</a>
     </div>
 </section>

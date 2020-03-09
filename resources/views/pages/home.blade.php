@@ -2,6 +2,6 @@
 
 @section('content')
 <div class="max-w-6xl py-6 mx-auto bg-white sm:px-6 lg:px-8">
-    <h1>Welcome page</h1>
+    <h1>Homepage</h1>
 </div>
 @endsection

@@ -13,9 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Frontend Page Routes
+Route::get('/', 'PagesController@home')->name('pages.home');
+Route::get('/about', 'PagesController@about')->name('pages.about');
+Route::get('/events', 'PagesController@events')->name('pages.events');
+Route::get('/gallery', 'PagesController@gallery')->name('pages.gallery');
+Route::get('/booking', 'PagesController@booking')->name('pages.booking');
+Route::get('/contact', 'PagesController@contact')->name('pages.contact');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
